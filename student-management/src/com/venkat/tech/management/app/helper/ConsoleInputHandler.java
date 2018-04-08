@@ -21,6 +21,7 @@ public int getOption() {
 	System.out.println("1. Register");
 	System.out.println("2. Login");
 	System.out.println("3. List");
+	System.out.println("4. Exit");
 	int opt = scanner.nextInt();
 	
 	return opt;

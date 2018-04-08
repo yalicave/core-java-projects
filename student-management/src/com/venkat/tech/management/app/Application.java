@@ -14,7 +14,9 @@ public class Application {
 		Scanner scanner = new Scanner(System.in);
 		InputHandler ih = new ConsoleInputHandler(scanner);
 		UserService userService = new UserService();
-		int opt = ih.getOption();
+		int opt=0;
+		while(opt!=4){
+			opt = ih.getOption();
 		switch (opt) {
 		case 1:
 
@@ -36,8 +38,8 @@ public class Application {
 		default:
 			break;
 		}
+		}
 		scanner.close();
-
 	}
 
 }
